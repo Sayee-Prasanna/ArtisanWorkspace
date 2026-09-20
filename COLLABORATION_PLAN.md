@@ -2,13 +2,18 @@
 
 Welcome to the shared workspace! This document serves as the central source of truth for all 5 workstreams. It defines the tasks, collaborative guidelines, and the **API Contracts** needed so that everyone can start working in parallel using mock data.
 
+> [!NOTE]
+> **Initial Phase - CLI First:** We will be starting with a Command Line Interface (CLI) for our initial development and integration. The development of the final UI will be done later.
+
 ---
 
 ## 🚀 Collaborative Guidelines
 
 To ensure smooth parallel development, please follow these rules:
 
-1. **Branching Strategy:** 
+1. **Fork & Pull Request Workflow:** 
+   - All team members should **fork** this repository and submit Pull Requests (PRs) from their forks to begin with.
+2. **Branching Strategy:** 
    - `main`: Golden path, always deployable.
    - Branch naming: `feature/[workstream-number]-[brief-desc]` (e.g., `feature/1-mobile-home-screen`).
 2. **API First:** 
