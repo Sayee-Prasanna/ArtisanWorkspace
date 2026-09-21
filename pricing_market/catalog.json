@@ -1,0 +1,554 @@
+{
+  "context": {
+    "domain": "nic2004:52110",
+    "country": "IND",
+    "city": "std:080",
+    "action": "on_search",
+    "core_version": "1.2.0",
+    "bap_id": "buyer-app.ondc.org",
+    "bpp_id": "artisan-network.gov.in",
+    "bpp_uri": "https://artisan-network.gov.in/bpp",
+    "timestamp": "2026-09-20T18:00:00.000Z"
+  },
+  "message": {
+    "catalog": {
+      "bpp/descriptor": {
+        "name": "Bharat Artisan Direct Marketplace (SIH Workstream 4)",
+        "symbol": "https://artisan-network.gov.in/logo.png",
+        "short_desc": "Empowering Rural Artisans via Fair-Wage Cost-Plus Pricing",
+        "long_desc": "Open Network for Digital Commerce verified artisan craft catalog with GI tags and transparent fair-wage cost breakdown."
+      },
+      "bpp/providers": [
+        {
+          "id": "PROVIDER_BHARAT_ARTISAN_FEDERATION",
+          "descriptor": {
+            "name": "All India Artisans & Craftworkers Guild",
+            "short_desc": "Verified cooperative representing authentic Indian handicraft masters."
+          },
+          "items": [
+            {
+              "id": "item_tc_001",
+              "descriptor": {
+                "name": "Handcrafted Terracotta Clay Water Pot",
+                "code": "SKU-ITEM_TC_001",
+                "symbol": "https://images.unsplash.com/photo-1578749556568-bc2c40e68b61?w=800&auto=format&fit=crop&q=80",
+                "short_desc": "Natural Evaporative Cooling Pot with Traditional Rajasthani Etchings",
+                "long_desc": "Hand-thrown on a traditional manual wheel by master artisan Rameshwar Prajapat. Shaped from purified riverbed alluvial clay, naturally sun-baked, and wood-fired in an open earthen pit kiln. Features micro-porous walls for organic evaporative water cooling and hand-etched floral geometric patterns.",
+                "images": [
+                  "https://images.unsplash.com/photo-1578749556568-bc2c40e68b61?w=800&auto=format&fit=crop&q=80"
+                ]
+              },
+              "price": {
+                "currency": "INR",
+                "value": "1216.00",
+                "maximum_value": "1375.00"
+              },
+              "category_id": "Home & Living",
+              "fulfillment_id": "F1_HANDICRAFT_SECURE_EXPRESS",
+              "location_id": "LOC_RAJA",
+              "matched": true,
+              "recommended": true,
+              "@ondc/org/returnable": false,
+              "@ondc/org/cancellable": true,
+              "@ondc/org/available_on_cod": false,
+              "@ondc/org/time_to_ship": "P12D",
+              "tags": [
+                {
+                  "code": "craft_authenticity",
+                  "list": [
+                    {
+                      "code": "craft_type",
+                      "value": "Pottery"
+                    },
+                    {
+                      "code": "gi_tagged",
+                      "value": "false"
+                    },
+                    {
+                      "code": "gi_registration",
+                      "value": "N/A"
+                    },
+                    {
+                      "code": "origin_state",
+                      "value": "Rajasthan"
+                    },
+                    {
+                      "code": "origin_village",
+                      "value": "Molela"
+                    },
+                    {
+                      "code": "artisan_name",
+                      "value": "Rameshwar Prajapat"
+                    },
+                    {
+                      "code": "artisan_share_pct",
+                      "value": "69.6%"
+                    }
+                  ]
+                },
+                {
+                  "code": "b2b_wholesale_spec",
+                  "list": [
+                    {
+                      "code": "b2b_unit_price",
+                      "value": "1083.00"
+                    },
+                    {
+                      "code": "moq",
+                      "value": "10"
+                    },
+                    {
+                      "code": "production_capacity_monthly",
+                      "value": "250"
+                    },
+                    {
+                      "code": "lead_time_days",
+                      "value": "12"
+                    }
+                  ]
+                },
+                {
+                  "code": "price_transparency",
+                  "list": [
+                    {
+                      "code": "labour_hours",
+                      "value": "5.5"
+                    },
+                    {
+                      "code": "hourly_wage",
+                      "value": "INR 120"
+                    },
+                    {
+                      "code": "material_cost",
+                      "value": "INR 220.00"
+                    },
+                    {
+                      "code": "why_this_price",
+                      "value": "Priced fairly at ₹1,216.00 based on 5.5 hours of skilled craft labour at a guaranteed ethical wage of ₹120/hr (₹660 labour), ₹220 in authentic raw materials, and a transparent 28% artisan collective margin. The artisan receives ₹846.20 (69.6% of the retail price), compared to only ~20% in traditional multi-tier retail channels. Similar pottery items typically retail commercially between ₹1,100 and ₹1,650."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "item_bp_002",
+              "descriptor": {
+                "name": "Jaipur GI Blue Pottery Royal Peacock Vase",
+                "code": "SKU-ITEM_BP_002",
+                "symbol": "https://images.unsplash.com/photo-1612196808214-b8e1d6145a8c?w=800&auto=format&fit=crop&q=80",
+                "short_desc": "Traditional Clay-Free Glazed Ceramic with Persian Cobalt Pigments",
+                "long_desc": "Authentic Geographical Indication (GI) tagged Jaipur Blue Pottery. Crafted using a heritage Indo-Persian dough of powdered quartz, raw glass, katira gond, and multani mitti. Hand-painted with fine squirrel-hair brushes in cobalt blue and turquoise mineral glazes depicting royal peacocks and lotus vines.",
+                "images": [
+                  "https://images.unsplash.com/photo-1612196808214-b8e1d6145a8c?w=800&auto=format&fit=crop&q=80"
+                ]
+              },
+              "price": {
+                "currency": "INR",
+                "value": "2496.00",
+                "maximum_value": "3100.00"
+              },
+              "category_id": "Home Decor",
+              "fulfillment_id": "F1_HANDICRAFT_SECURE_EXPRESS",
+              "location_id": "LOC_RAJA",
+              "matched": true,
+              "recommended": true,
+              "@ondc/org/returnable": false,
+              "@ondc/org/cancellable": true,
+              "@ondc/org/available_on_cod": false,
+              "@ondc/org/time_to_ship": "P18D",
+              "tags": [
+                {
+                  "code": "craft_authenticity",
+                  "list": [
+                    {
+                      "code": "craft_type",
+                      "value": "Ceramics"
+                    },
+                    {
+                      "code": "gi_tagged",
+                      "value": "true"
+                    },
+                    {
+                      "code": "gi_registration",
+                      "value": "GI-Appl-No-2"
+                    },
+                    {
+                      "code": "origin_state",
+                      "value": "Rajasthan"
+                    },
+                    {
+                      "code": "origin_village",
+                      "value": "Kot Jewar"
+                    },
+                    {
+                      "code": "artisan_name",
+                      "value": "Kripal Singh Rathore"
+                    },
+                    {
+                      "code": "artisan_share_pct",
+                      "value": "70.2%"
+                    }
+                  ]
+                },
+                {
+                  "code": "b2b_wholesale_spec",
+                  "list": [
+                    {
+                      "code": "b2b_unit_price",
+                      "value": "2208.00"
+                    },
+                    {
+                      "code": "moq",
+                      "value": "6"
+                    },
+                    {
+                      "code": "production_capacity_monthly",
+                      "value": "120"
+                    },
+                    {
+                      "code": "lead_time_days",
+                      "value": "18"
+                    }
+                  ]
+                },
+                {
+                  "code": "price_transparency",
+                  "list": [
+                    {
+                      "code": "labour_hours",
+                      "value": "9.0"
+                    },
+                    {
+                      "code": "hourly_wage",
+                      "value": "INR 150"
+                    },
+                    {
+                      "code": "material_cost",
+                      "value": "INR 450.00"
+                    },
+                    {
+                      "code": "why_this_price",
+                      "value": "Priced fairly at ₹2,496.00 based on 9.0 hours of skilled craft labour at a guaranteed ethical wage of ₹150/hr (₹1,350 labour), ₹450 in authentic raw materials, and a transparent 30% artisan collective margin. The artisan receives ₹1,753.20 (70.2% of the retail price), compared to only ~20% in traditional multi-tier retail channels. Similar ceramics items typically retail commercially between ₹2,400 and ₹3,800."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "item_mb_003",
+              "descriptor": {
+                "name": "Madhubani 'Tree of Life' Natural Dye Wall Art",
+                "code": "SKU-ITEM_MB_003",
+                "symbol": "https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?w=800&auto=format&fit=crop&q=80",
+                "short_desc": "GI-Certified Mithila Art Painted with Bamboo Twigs and Forest Dyes",
+                "long_desc": "Authentic Kachni and Bharni style Madhubani painting created on cow-dung treated handmade cotton rag paper. Intricately rendered using sharpened bamboo nibs without preliminary pencil sketches. Pigments are 100% natural, extracted from indigo, turmeric root, parijat flowers, kusum leaves, and pure lampblack soot.",
+                "images": [
+                  "https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?w=800&auto=format&fit=crop&q=80"
+                ]
+              },
+              "price": {
+                "currency": "INR",
+                "value": "3020.80",
+                "maximum_value": "4150.00"
+              },
+              "category_id": "Art & Collectibles",
+              "fulfillment_id": "F1_HANDICRAFT_SECURE_EXPRESS",
+              "location_id": "LOC_BIHA",
+              "matched": true,
+              "recommended": true,
+              "@ondc/org/returnable": false,
+              "@ondc/org/cancellable": true,
+              "@ondc/org/available_on_cod": false,
+              "@ondc/org/time_to_ship": "P21D",
+              "tags": [
+                {
+                  "code": "craft_authenticity",
+                  "list": [
+                    {
+                      "code": "craft_type",
+                      "value": "Folk Painting"
+                    },
+                    {
+                      "code": "gi_tagged",
+                      "value": "true"
+                    },
+                    {
+                      "code": "gi_registration",
+                      "value": "GI-Appl-No-45"
+                    },
+                    {
+                      "code": "origin_state",
+                      "value": "Bihar"
+                    },
+                    {
+                      "code": "origin_village",
+                      "value": "Ranti"
+                    },
+                    {
+                      "code": "artisan_name",
+                      "value": "Sunita Devi Jha"
+                    },
+                    {
+                      "code": "artisan_share_pct",
+                      "value": "80.2%"
+                    }
+                  ]
+                },
+                {
+                  "code": "b2b_wholesale_spec",
+                  "list": [
+                    {
+                      "code": "b2b_unit_price",
+                      "value": "2690.40"
+                    },
+                    {
+                      "code": "moq",
+                      "value": "5"
+                    },
+                    {
+                      "code": "production_capacity_monthly",
+                      "value": "45"
+                    },
+                    {
+                      "code": "lead_time_days",
+                      "value": "21"
+                    }
+                  ]
+                },
+                {
+                  "code": "price_transparency",
+                  "list": [
+                    {
+                      "code": "labour_hours",
+                      "value": "14.0"
+                    },
+                    {
+                      "code": "hourly_wage",
+                      "value": "INR 140"
+                    },
+                    {
+                      "code": "material_cost",
+                      "value": "INR 310.00"
+                    },
+                    {
+                      "code": "why_this_price",
+                      "value": "Priced fairly at ₹3,020.80 based on 14.0 hours of skilled craft labour at a guaranteed ethical wage of ₹140/hr (₹1,960 labour), ₹310 in authentic raw materials, and a transparent 28% artisan collective margin. The artisan receives ₹2,422.56 (80.2% of the retail price), compared to only ~20% in traditional multi-tier retail channels. Similar folk painting items typically retail commercially between ₹3,100 and ₹5,200."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "item_dk_004",
+              "descriptor": {
+                "name": "Bastar Dhokra Lost-Wax Bell Metal Nandi",
+                "code": "SKU-ITEM_DK_004",
+                "symbol": "https://images.unsplash.com/photo-1590736969955-71cc94801759?w=800&auto=format&fit=crop&q=80",
+                "short_desc": "4000-Year-Old Lost-Wax Bell Metal Cast from the Deep Forests of Bastar",
+                "long_desc": "Handmade using the ancient non-ferrous lost-wax casting technique (cire perdue) dating back to the Indus Valley Dancing Girl. Constructed from fine threads of pure forest beeswax coiled over a clay core, encased in termite-mound clay slip, and filled with molten scrap brass and bronze.",
+                "images": [
+                  "https://images.unsplash.com/photo-1590736969955-71cc94801759?w=800&auto=format&fit=crop&q=80"
+                ]
+              },
+              "price": {
+                "currency": "INR",
+                "value": "2060.50",
+                "maximum_value": "2750.00"
+              },
+              "category_id": "Home Decor",
+              "fulfillment_id": "F1_HANDICRAFT_SECURE_EXPRESS",
+              "location_id": "LOC_CHHA",
+              "matched": true,
+              "recommended": true,
+              "@ondc/org/returnable": false,
+              "@ondc/org/cancellable": true,
+              "@ondc/org/available_on_cod": false,
+              "@ondc/org/time_to_ship": "P15D",
+              "tags": [
+                {
+                  "code": "craft_authenticity",
+                  "list": [
+                    {
+                      "code": "craft_type",
+                      "value": "Metal Craft"
+                    },
+                    {
+                      "code": "gi_tagged",
+                      "value": "true"
+                    },
+                    {
+                      "code": "gi_registration",
+                      "value": "GI-Appl-No-83"
+                    },
+                    {
+                      "code": "origin_state",
+                      "value": "Chhattisgarh"
+                    },
+                    {
+                      "code": "origin_village",
+                      "value": "Kondagaon"
+                    },
+                    {
+                      "code": "artisan_name",
+                      "value": "Sukhlal Ghadwa"
+                    },
+                    {
+                      "code": "artisan_share_pct",
+                      "value": "69.8%"
+                    }
+                  ]
+                },
+                {
+                  "code": "b2b_wholesale_spec",
+                  "list": [
+                    {
+                      "code": "b2b_unit_price",
+                      "value": "1822.75"
+                    },
+                    {
+                      "code": "moq",
+                      "value": "8"
+                    },
+                    {
+                      "code": "production_capacity_monthly",
+                      "value": "80"
+                    },
+                    {
+                      "code": "lead_time_days",
+                      "value": "15"
+                    }
+                  ]
+                },
+                {
+                  "code": "price_transparency",
+                  "list": [
+                    {
+                      "code": "labour_hours",
+                      "value": "8.5"
+                    },
+                    {
+                      "code": "hourly_wage",
+                      "value": "INR 130"
+                    },
+                    {
+                      "code": "material_cost",
+                      "value": "INR 380.00"
+                    },
+                    {
+                      "code": "why_this_price",
+                      "value": "Priced fairly at ₹2,060.50 based on 8.5 hours of skilled craft labour at a guaranteed ethical wage of ₹130/hr (₹1,105 labour), ₹380 in authentic raw materials, and a transparent 30% artisan collective margin. The artisan receives ₹1,437.85 (69.8% of the retail price), compared to only ~20% in traditional multi-tier retail channels. Similar metal craft items typically retail commercially between ₹2,100 and ₹3,400."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "item_bs_005",
+              "descriptor": {
+                "name": "Banarasi Pure Katan Silk Handloom Stole",
+                "code": "SKU-ITEM_BS_005",
+                "symbol": "https://images.unsplash.com/photo-1610030469983-98e550d6193c?w=800&auto=format&fit=crop&q=80",
+                "short_desc": "Handwoven with Fine Pure Silk Warp and Intricate Zari Butidar Weft",
+                "long_desc": "Authentic Handloom Mark and Silk Mark certified Banarasi stole. Handwoven on traditional wooden pit looms across 16 days. Embellished with classic shikargah and floral kadhwa zari motifs using pure silk yarns and tested metallic gold threads.",
+                "images": [
+                  "https://images.unsplash.com/photo-1610030469983-98e550d6193c?w=800&auto=format&fit=crop&q=80"
+                ]
+              },
+              "price": {
+                "currency": "INR",
+                "value": "4710.40",
+                "maximum_value": "6150.00"
+              },
+              "category_id": "Apparel & Accessories",
+              "fulfillment_id": "F1_HANDICRAFT_SECURE_EXPRESS",
+              "location_id": "LOC_UTTA",
+              "matched": true,
+              "recommended": true,
+              "@ondc/org/returnable": false,
+              "@ondc/org/cancellable": true,
+              "@ondc/org/available_on_cod": false,
+              "@ondc/org/time_to_ship": "P25D",
+              "tags": [
+                {
+                  "code": "craft_authenticity",
+                  "list": [
+                    {
+                      "code": "craft_type",
+                      "value": "Handloom Weaving"
+                    },
+                    {
+                      "code": "gi_tagged",
+                      "value": "true"
+                    },
+                    {
+                      "code": "gi_registration",
+                      "value": "GI-Appl-No-99"
+                    },
+                    {
+                      "code": "origin_state",
+                      "value": "Uttar Pradesh"
+                    },
+                    {
+                      "code": "origin_village",
+                      "value": "Kotwa"
+                    },
+                    {
+                      "code": "artisan_name",
+                      "value": "Mohammad Rizwan Ansari"
+                    },
+                    {
+                      "code": "artisan_share_pct",
+                      "value": "69.7%"
+                    }
+                  ]
+                },
+                {
+                  "code": "b2b_wholesale_spec",
+                  "list": [
+                    {
+                      "code": "b2b_unit_price",
+                      "value": "4195.20"
+                    },
+                    {
+                      "code": "moq",
+                      "value": "6"
+                    },
+                    {
+                      "code": "production_capacity_monthly",
+                      "value": "60"
+                    },
+                    {
+                      "code": "lead_time_days",
+                      "value": "25"
+                    }
+                  ]
+                },
+                {
+                  "code": "price_transparency",
+                  "list": [
+                    {
+                      "code": "labour_hours",
+                      "value": "16.0"
+                    },
+                    {
+                      "code": "hourly_wage",
+                      "value": "INR 160"
+                    },
+                    {
+                      "code": "material_cost",
+                      "value": "INR 980.00"
+                    },
+                    {
+                      "code": "why_this_price",
+                      "value": "Priced fairly at ₹4,710.40 based on 16.0 hours of skilled craft labour at a guaranteed ethical wage of ₹160/hr (₹2,560 labour), ₹980 in authentic raw materials, and a transparent 28% artisan collective margin. The artisan receives ₹3,281.28 (69.7% of the retail price), compared to only ~20% in traditional multi-tier retail channels. Similar handloom weaving items typically retail commercially between ₹4,800 and ₹7,500."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
