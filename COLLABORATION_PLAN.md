@@ -53,7 +53,7 @@ To ensure smooth parallel development, please follow these rules:
 ### 4. Pricing & Market Linkage
 **Lead:** [Assignee Name]
 - [ ] Build cost-plus formula logic (Retail & B2B splits).
-- [ ] Compile comparable-price dataset for 4-5 crafts.
+- [x] Compile comparable-price dataset for 4-5 crafts.
 - [ ] Generate "Why this price" explanation text.
 - [ ] Export catalog in ONDC-style schema or CSV.
 - [ ] Build a mock buyer view for validation.
