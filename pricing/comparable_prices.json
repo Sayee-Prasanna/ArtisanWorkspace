@@ -1,0 +1,37 @@
+[
+  {
+    "craft_type": "Terracotta",
+    "item_name": "Terracotta Clay Pot",
+    "retail_price_range": [1000, 1500],
+    "b2b_price_range": [800, 1200],
+    "source": "Market Average"
+  },
+  {
+    "craft_type": "Textile",
+    "item_name": "Handwoven Silk Saree",
+    "retail_price_range": [5000, 15000],
+    "b2b_price_range": [4000, 12000],
+    "source": "Market Average"
+  },
+  {
+    "craft_type": "Metalware",
+    "item_name": "Brass Diya",
+    "retail_price_range": [500, 1000],
+    "b2b_price_range": [350, 800],
+    "source": "Market Average"
+  },
+  {
+    "craft_type": "Painting",
+    "item_name": "Madhubani Painting",
+    "retail_price_range": [2000, 5000],
+    "b2b_price_range": [1500, 4000],
+    "source": "Market Average"
+  },
+  {
+    "craft_type": "Woodwork",
+    "item_name": "Wooden Carved Elephant",
+    "retail_price_range": [800, 2500],
+    "b2b_price_range": [600, 2000],
+    "source": "Market Average"
+  }
+]
