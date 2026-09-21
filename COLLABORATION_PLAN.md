@@ -52,11 +52,11 @@ To ensure smooth parallel development, please follow these rules:
 
 ### 4. Pricing & Market Linkage
 **Lead:** [Assignee Name]
-- [ ] Build cost-plus formula logic (Retail & B2B splits).
-- [ ] Compile comparable-price dataset for 4-5 crafts.
-- [ ] Generate "Why this price" explanation text.
-- [ ] Export catalog in ONDC-style schema or CSV.
-- [ ] Build a mock buyer view for validation.
+- [x] Build cost-plus formula logic (Retail & B2B splits).
+- [x] Compile comparable-price dataset for 4-5 crafts.
+- [x] Generate "Why this price" explanation text.
+- [x] Export catalog in ONDC-style schema or CSV.
+- [x] Build a mock buyer view for validation.
 - [ ] Expose `POST /api/pricing/calculate` endpoint.
 
 ### 5. Backend, Khata, Schemes & Passport
@@ -166,6 +166,39 @@ By agreeing on these shapes today (Day 1), the frontend can use mock data while 
 }
 ```
 
+
+---
+
+## 🛠️ Workstream Tools & CLIs
+
+### Workstream 3: Voice & Listing Generation (`voice_listing/`)
+```bash
+python voice_listing/cli.py listing --mock
+python voice_listing/cli.py transcribe audio.wav --lang hi
+python voice_listing/cli.py tts "नमस्ते" --lang hi -o hello.wav
+```
+
+### Workstream 4: Pricing & Market Linkage (`pricing_market/`)
+```bash
+# Calculate cost-plus retail & B2B prices (matching Contract C)
+python pricing_market/cli.py calculate --mock
+python pricing_market/cli.py calculate --craft-id terracotta-pot
+
+# View 'Why This Price' breakdown narrative
+python pricing_market/cli.py explain --craft-id blue-pottery-vase
+
+# Inspect 5-craft dataset & comparable benchmarks
+python pricing_market/cli.py dataset
+
+# Export catalog to ONDC Beckn schema (JSON) or CSV
+python pricing_market/cli.py export-ondc --output ondc_catalog.json
+python pricing_market/cli.py export-ondc --format csv --output ondc_catalog.csv
+
+# Launch interactive Mock Buyer View in browser
+python pricing_market/cli.py buyer-view --port 8080
+```
+
 ---
 
 *This document is a living artifact. Please submit a PR to update contracts or check off tasks as they are completed.*
+
