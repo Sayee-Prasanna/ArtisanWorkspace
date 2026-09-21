@@ -4,7 +4,7 @@ import sys
 import json
 
 def cmd_process(args):
-    from processing import check_quality, remove_background, generate_tags
+    from processing import check_quality, remove_background, generate_tags, correct_lighting
     
     image_path = args.image_path
     if not os.path.exists(image_path):
@@ -23,16 +23,23 @@ def cmd_process(args):
     if feedback:
         print(f"  Feedback: {feedback}")
         
-    # 2. Background Removal
+    # 2. Lighting Correction
+    print("Correcting lighting...")
+    corrected_bytes = correct_lighting(image_bytes)
+        
+    # 3. Background Removal
     if args.remove_bg:
         print("Removing background...")
-        processed_bytes = remove_background(image_bytes)
-        out_path = args.output or f"processed_{os.path.basename(image_path)}"
-        with open(out_path, "wb") as f:
-            f.write(processed_bytes)
-        print(f"  Saved processed image to '{out_path}'")
+        processed_bytes = remove_background(corrected_bytes)
+    else:
+        processed_bytes = corrected_bytes
         
-    # 3. Tagging
+    out_path = args.output or f"processed_{os.path.basename(image_path)}"
+    with open(out_path, "wb") as f:
+        f.write(processed_bytes)
+    print(f"  Saved processed image to '{out_path}'")
+        
+    # 4. Tagging
     if args.tag:
         print("Generating tags...")
         tags = generate_tags(image_bytes)

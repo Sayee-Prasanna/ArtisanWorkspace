@@ -2,7 +2,7 @@ import os
 import uuid
 from fastapi import FastAPI, File, UploadFile, HTTPException
 from fastapi.responses import JSONResponse
-from processing import remove_background, check_quality, generate_tags
+from processing import remove_background, check_quality, generate_tags, correct_lighting
 
 app = FastAPI(title="Vision & Image Studio API")
 
@@ -24,8 +24,11 @@ async def process_image(image: UploadFile = File(...)):
         # 1. Check quality
         quality_passed, quality_feedback = check_quality(image_bytes)
         
-        # 2. Remove background
-        processed_bytes = remove_background(image_bytes)
+        # 2. Correct Lighting
+        corrected_bytes = correct_lighting(image_bytes)
+        
+        # 3. Remove background
+        processed_bytes = remove_background(corrected_bytes)
         
         # Save processed image (mocking storage upload)
         filename = f"{uuid.uuid4()}_processed.png"
@@ -33,7 +36,7 @@ async def process_image(image: UploadFile = File(...)):
         with open(filepath, "wb") as f:
             f.write(processed_bytes)
             
-        # 3. Generate tags
+        # 4. Generate tags
         tags = generate_tags(image_bytes)
         
         return JSONResponse(content={

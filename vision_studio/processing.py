@@ -42,6 +42,34 @@ def remove_background(image_bytes: bytes) -> bytes:
         print(f"Error removing background: {e}")
         return image_bytes
 
+def correct_lighting(image_bytes: bytes) -> bytes:
+    """Corrects the lighting of an image using OpenCV (Histogram Equalization on the Y channel)."""
+    try:
+        # Convert bytes to numpy array
+        nparr = np.frombuffer(image_bytes, np.uint8)
+        img = cv2.imdecode(nparr, cv2.IMREAD_COLOR)
+        
+        if img is None:
+            return image_bytes
+            
+        # Convert to YUV color space
+        img_yuv = cv2.cvtColor(img, cv2.COLOR_BGR2YUV)
+        
+        # Equalize the histogram of the Y channel
+        img_yuv[:,:,0] = cv2.equalizeHist(img_yuv[:,:,0])
+        
+        # Convert the YUV image back to RGB format
+        img_output = cv2.cvtColor(img_yuv, cv2.COLOR_YUV2BGR)
+        
+        # Encode back to bytes
+        success, encoded_image = cv2.imencode('.jpg', img_output)
+        if success:
+            return encoded_image.tobytes()
+        return image_bytes
+    except Exception as e:
+        print(f"Error correcting lighting: {e}")
+        return image_bytes
+
 def check_quality(image_bytes: bytes):
     """
     Checks the quality of the image (blur and darkness).
